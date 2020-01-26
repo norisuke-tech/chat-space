@@ -1,7 +1,34 @@
-.chat-main
-  .chat-main__group-info
-    関根
-  .chat-main__message-list
-    嘉典
-  .chat-main__message-form
-    関根嘉典  
+.chat
+  .chat__groupes
+    .chat__groupes--left
+      sekine
+      .chat__groupes--left--end
+        yo
+    =link_to "#", class: "chat__groupes--left--end--right" do
+      Edit
+  .chat-main
+    .chat-main__group
+      .chat-main__group--name
+        sekine
+      .chat-main__group--name--time
+        2020.1/19
+    .chat-main__message--info
+      1回目の投稿
+    .chat-main__groups
+      .chat-main__groups--names
+        sekine
+      .chat-main__groups--names--times
+        2020.1/19
+    .chat-main__message--infos
+      2回目の投稿         
+  .chat-main__form
+    .chat-main__form--block
+      .chat-main__form--block--list
+        
+        %input{type:"text",class:"input-box__text",placeholder:"type a message"} 
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      
+      %input{type:"submit",class:"submit-btn"}
+     
