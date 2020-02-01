@@ -22,18 +22,12 @@
   }  
 }
 
-
-.top-item{
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  & a { 
-    color: $white;
-    text-decoration: none ; 
-    margin-left: 5px; 
-  }
+& a { 
+  color: $white;
+  text-decoration: none ;  
 }
+
+
 
 
 

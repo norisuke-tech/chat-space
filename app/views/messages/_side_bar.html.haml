@@ -1,21 +1,21 @@
 .side
   .side__user
-    = current_user.name
-    .top-item
-      
-      .top-item__name
-        
-      .top-item__name--icons
-        
-        = link_to "#" do
+    .side__user--name
+      .side__user--name--icon
+        = current_user.name
+      .top-item
+        = link_to new_group_path do
           = icon('fas', 'edit')
         = link_to edit_user_path(current_user) do
-          = icon('fas', 'cog')  
+          = icon('fas', 'cog')
+  
         
         
   .side-items
-    .side-items__name
-      .side-items__name--select
-        グループ名
-      .side-items__name--select--comment
-        まだメッセージはありません
+    - current_user.groups.each do |group|
+      .side-items__name
+        = link_to '#' do
+          .side-items__name--select
+            = group.name
+          .side-items__name--select--comment
+            まだメッセージはありません
