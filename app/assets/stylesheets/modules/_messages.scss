@@ -39,7 +39,7 @@
 
 .side-items{
   height: calc(100vh - 100px);
-  background-color: #8e9399;
+  background-color: #2f3e51;
   width:300px;
   padding: 20px 20px 0px 20px;
   &__name{
@@ -64,7 +64,7 @@
   float: right;
   &__groupes{
     height: 100px;
-    background-color: #a71f1f;
+    background-color: white;
     width: calc(100vw - 300px);
     padding: 0px 40px 0px 40px;
     display: flex;
@@ -100,7 +100,7 @@
   color:$gray;
   font-size: 16px;
   &__group{
-    display: flex;
+    
     &--name{
       font-size: 16px;
       color:$gray;
@@ -147,18 +147,20 @@ margin-bottom: 46px;
     &--list{
       position: relative;
       width: 100%;
-      display: flex;
-      .input-box__text{
-        height: 50px;
-        width: 100%;
-        padding: 0px 40px 0 10px;
-        color: #434a54;
-        border-style: none;
-        background-color: white;
+      
+      
 
-      }
     }
   }
+}
+
+.input-box__text{
+  height: 50px;
+  width: 100%;
+  padding: 0px 40px 0 10px;
+  color: #434a54;
+  border-style: none;
+  background-color: white;
 }
 .input-box__image__file{
   display: none;
@@ -166,8 +168,8 @@ margin-bottom: 46px;
 .input-box__image{
   font-size: 1.3rem;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 130px;
   cursor: pointer;
 }
 .submit-btn{
@@ -178,4 +180,7 @@ margin-bottom: 46px;
   background-color: #38aef0;
   cursor: pointer;
   color:$white;
+}
+.new_message{
+  display: flex;
 }
