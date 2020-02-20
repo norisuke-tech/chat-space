@@ -9,20 +9,8 @@
     =link_to edit_group_path(@group), class: "chat__groupes--left--end--right" do
       Edit
   .chat-main
-    .chat-main__group
-      = render @messages
-      .chat-main__group--name
-        
-      .chat-main__group--name--time
-        
-    .chat-main__message--info
-      
-    .chat-main__groups
-      .chat-main__groups--names
-      
-      .chat-main__groups--names--times
-        
-    .chat-main__message--infos
+    = render @messages
+
                
   .chat-main__form
     .chat-main__form--block
@@ -33,4 +21,4 @@
             = f.label :image, class: 'input-box__image' do
               = icon('fas', 'image', class: 'icon')
               = f.file_field :image, class: 'input-box__image__file'
-          = f.submit 'Send', class: 'submit-btn'
+          = f.submit 'Send',class: 'submit-btn'
