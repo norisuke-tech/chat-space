@@ -66,7 +66,7 @@ $('#new_message').on('submit', function(e){
 var reloadMessages = function() {
   
   last_message_id = $('.message:last').data("message-id");
-  console.log(last_message_id);
+  
   $.ajax({
 
     url: "api/messages",
@@ -85,7 +85,7 @@ var reloadMessages = function() {
     }
   })
   .fail(function() {
-    console.log('error');
+    alert('自動更新に失敗しました');
   });
 };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
